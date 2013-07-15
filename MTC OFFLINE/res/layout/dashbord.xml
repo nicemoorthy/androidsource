@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/widget0"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/background">
+	<Button android:text="@string/stage_search" style="@style/HomeButton"
+		android:onClick="onClickFeature" android:id="@+id/stage_search"
+		android:drawableTop="@drawable/stage_icon" android:layout_x="-2dp"
+		android:textColor="@color/black" android:layout_y="169dp"></Button>
+	<Button android:text="@string/route_search" style="@style/HomeButton"
+		android:onClick="onClickFeature" android:id="@+id/route_search"
+		android:drawableTop="@drawable/route_icon" android:layout_x="6dp"
+		android:textColor="@color/black" android:layout_y="78dp"></Button>
+	<TextView android:id="@+id/textView1" android:gravity="center_vertical|center_horizontal"
+		android:text="@string/welcome" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="@color/black" android:layout_x="-2dp"
+		android:layout_y="26dp"></TextView>
+
+</AbsoluteLayout>

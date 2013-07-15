@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+	<TextView android:id="@+id/route_text" android:text="@string/stage_txt"
+		android:layout_margin="10dip" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textColor="@color/black" />
+	<AutoCompleteTextView android:layout_below="@+id/route_text"
+		android:completionThreshold="3" android:singleLine="true"
+		android:hint="@string/stage_hint" android:layout_margin="10dip"
+		android:id="@+id/route_complete" android:layout_height="wrap_content"
+		android:maxLength="50" android:inputType="textCapCharacters"
+		android:layout_width="fill_parent">
+		<requestFocus></requestFocus>
+	</AutoCompleteTextView>
+
+	<ListView android:layout_height="fill_parent"
+		android:layout_below="@+id/route_complete" android:focusable="true"
+		android:layout_width="wrap_content" android:id="@+id/route_list"
+		android:cacheColorHint="@android:color/transparent" />
+</RelativeLayout>

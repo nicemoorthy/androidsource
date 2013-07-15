@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="welcome">Welcome MTC OFFLINE</string>
+	<string name="app_name">MTC</string>
+	<string name="route_search">Search By Route</string>
+	<string name="stage_search">Search By Stage</string>
+	<string name="route">Route</string>
+	<string name="stage">Stage</string>
+	<string name="route_txt">Enter Route Number</string>
+	<string name="stage_txt">Enter Stage Name</string>
+	<string name="search_btn">Search</string>
+	<string name="service_type">Service Type : </string>
+	<string name="orgin">Orgin : </string>
+	<string name="destination">Destination : </string>
+	<string name="journey">Journey Time [in Min.] : </string>
+	<string name="exit">Exit</string>
+	<string name="stage_hint">At least 3 chars....</string>
+	<string name="route_hint">At least 1 chars....</string>
+</resources>

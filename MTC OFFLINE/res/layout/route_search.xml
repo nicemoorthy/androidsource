@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+	<TextView android:id="@+id/route_text" android:text="@string/route_txt"
+		android:layout_margin="10dip" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textColor="@color/black" />
+	<AutoCompleteTextView android:layout_below="@+id/route_text"
+		android:completionThreshold="1" android:singleLine="true"
+		android:layout_margin="10dip" android:id="@+id/route_complete"
+		android:hint="@string/route_hint" android:layout_height="wrap_content"
+		android:maxLength="15" android:inputType="textCapCharacters"
+		android:layout_width="fill_parent">
+		<requestFocus></requestFocus>
+	</AutoCompleteTextView>
+
+	<TextView android:id="@+id/txt1" android:text="@string/service_type"
+		style="@style/tableText" android:layout_margin="2dip"
+		android:visibility="invisible" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/route_complete" />
+	<TextView android:id="@+id/service_text" style="@style/tableBrdText"
+		android:layout_margin="2dip" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/route_complete"
+		android:layout_toRightOf="@+id/txt1" />
+
+	<TextView android:id="@+id/txt2" android:text="@string/orgin"
+		style="@style/tableText" android:layout_margin="2dip"
+		android:visibility="invisible" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt1" />
+	<TextView android:id="@+id/orgin_text" android:layout_margin="2dip"
+		style="@style/tableBrdText" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt1"
+		android:layout_toRightOf="@+id/txt2" />
+
+	<TextView android:id="@+id/txt3" android:text="@string/destination"
+		style="@style/tableText" android:layout_margin="2dip"
+		android:visibility="invisible" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt2" />
+	<TextView android:id="@+id/dest_text" android:layout_margin="2dip"
+		style="@style/tableBrdText" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt2"
+		android:layout_toRightOf="@+id/txt3" />
+
+	<TextView android:id="@+id/txt4" android:text="@string/journey"
+		style="@style/tableText" android:layout_margin="2dip"
+		android:visibility="invisible" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt3" />
+	<TextView android:id="@+id/journy_text" android:layout_margin="2dip"
+		style="@style/tableBrdText" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/txt3"
+		android:layout_toRightOf="@+id/txt4" />
+
+	<ListView android:layout_height="fill_parent"
+		android:focusable="true" android:layout_width="wrap_content"
+		android:id="@+id/route_list" android:layout_below="@+id/txt4"
+		android:cacheColorHint="@android:color/transparent" />
+</RelativeLayout>
